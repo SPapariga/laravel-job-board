@@ -27,6 +27,7 @@
         @if (session('error'))
             <x-alert type="success" message="{{ session('error') }}" />
         @endif
+
         {{ $slot }}
     </main>
     <script src="{{ asset('js/script.js') }}"></script>
